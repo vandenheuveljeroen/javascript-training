@@ -1,0 +1,15 @@
+.bg {
+  color: #ff5900;
+}
+
+.jumbotron-foto {
+  background-image: url("assets/img/bohemian2.jpg");
+  background-size: cover;
+  height: 500px;
+  width: auto;
+}
+
+.carousel-inner img {
+  width: 500px;
+  height: 350px;
+}

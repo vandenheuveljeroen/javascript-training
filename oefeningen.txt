@@ -1,0 +1,312 @@
+--------------VARIABELEN---------------------
+
+OEFENING 1.
+ 
+const n = 0
+const x = "junior web-developer"
+const y = "België"
+const z = "jenniffer lopez"
+
+console.log("U wordt "+x+" en woont in " +y+", en bent getrouwd met "+z+" met "+n+" kinderen.")
+___________
+OEFENING 2.
+
+const jaartal = 2018
+const geboortejaar = 1990
+
+console.log("persoon x is "+(jaartal-geboortejaar)+" jaar oud.")
+___________
+OEFENING 3.
+
+const leeftijd = 28
+const levensverwachting = 82
+
+//console.log("je hebt nog steeds "+(levensverwachting-leeftijd)+" jaar voordat je dood bent! get over it..")//
+//console.log("je hebt nog steeds "+(levensverwachting-leeftijd)+" jaar voordat je de leeftijd van "+levensverwachting+" hebt bereikt
+___________
+OEFENING 4.
+
+let resultaat= (1+2)*3+4/2;
+
+stap 1) werk de haakjes weg: 3*3+4/2
+stap 2) geef voorang aan * en / : 9+2
+stap 3) + en - werk je als laatste uit: 11
+
+-------------VERGELIJKINGEN--------------------
+
+OEFENING 1.
+
+const taalA = "engels";
+const taalB = "frans";
+const taalC = "nederlands";
+const gekozenTaal = prompt("welke taal spreekt u ? engels, frans, nederlands");
+
+  if (gekozenTaal === taalA) {
+    alert("hello world");
+  } else if (gekozenTaal === taalB) {
+    alert("bonjour tout le monde");
+  } else if (gekozenTaal === taalC) {
+   alert("hallo iedereen");
+  }
+
+--------------FUNCTIES-------------------------
+
+OEFENING 1.
+
+function aftrekking(a, b) {
+    return a - b; 
+}
+function divisie(a, b) {
+    return a / b; 
+}
+function multiply(a, b) {
+    return a * b;
+}
+function percent(a, b) {
+    return (a / 100) * b; 
+}
+
+function snelheidsberekeningen(afstand,tijd) {
+    return tijd / afstand; 
+}
+
+------------------LOOPS------------------------
+
+OEFENING 1.
+
+for (var x=0; x<=20; x++) {
+    if (x === 0) {
+            console.log(x +  " is even"); 
+    }
+    else if (x % 2 === 0) {
+            console.log(x + " is even"); 
+    }
+    else {
+            console.log(x + " is odd");
+    }
+}
+___________
+OEFENING 2.
+
+for (var x=1; x<=10; x++) {
+    if (x === 0) {
+            console.log(x +  " You can\t multiply with 0"); // define what 0 means. 
+    }
+    else (x * 9 === 1) 
+            console.log(x+" * 9 =", x * 9);  // Log the formule
+    }
+___________
+OEFENING 3.
+
+var puntenSysteem = function () {
+     for (var x = 0; x <= 100; x++) {
+            if (x >= 90) {
+               console.log("Voor " + x + " punten heb je graad A");
+             }
+             else if (x >= 80) {
+                        console.log("Voor " + x + " punten heb je graad B");
+             }
+             else if (x >= 70) {
+                        console.log("Voor " + x + " punten heb je graad C");
+             }
+             else if (x >= 65) {
+                        console.log("Voor " + x + " punten heb je graad D");
+             }
+             else {
+                        console.log("Voor " + x + " punten heb je graad F");
+             }
+      }
+}
+___________
+OEFENING 4.
+
+function pyramide() {
+        for (let i = 0; i < 5; i++) {
+                // Print each iteration to the console
+                if (i === 0) {
+                        console.log("*")
+                }
+                else if (i === 1) {
+                        console.log("* *")
+                }
+                else if (i === 2) {
+                        console.log("* * *")
+                }
+                else if (i === 3) {
+                        console.log("* * * *")
+                }
+                else if (i === 4) {
+                        console.log("* * * * *")
+                }
+        }
+}
+
+-----------------ARRAYS--------------------------
+
+OEFENING 1.
+
+var numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9.] // sums to 45
+var sum = 0;
+for (var i = 0; i < numberArray.length; i++) {
+  console.log(sum += numberArray[i]);
+}
+___________
+OEFENING 2.
+
+var actorArray = ["Sylvester Stalone", "Arnold Schwarzenegger", "Will Smith"]
+for (var i = 0; i < 3; i++) {
+        if (i === 0) {
+                console.log("De eerst is " + actorArray[i])
+        }
+        else if (i === 1) {
+                console.log("De tweede is " + actorArray[i])
+        }
+        else if (i === 2)
+                console.log("De derde is " + actorArray[i])
+        }
+___________
+OEFENING 3.
+
+const char = ["Mario", "Luigi", "Peach"]
+const charCopy = char.slice(char.push("Bowser"));
+
+------------------MATHS--------------------------
+
+OEFENING 1.
+
+console.log(Math.max(-3, 9, 21, 36, 27, 54, 17, 35))
+console.log(Math.min(7, 5, -12, 6, 32, 18, 14, -2))
+console.log(Math.max(-3, 9, 21, 36, 27, 54, 17, 35) + Math.min(7, 5, -12, 6, 32, 18, 14, -2))
+
+//optie 2//
+
+var array1 = [-3, 9, 21, 36, 27, 54, 17, 35]
+var array2 = [7, 5, -12, 6, 32, 18, 14, -2]
+console.log(Math.max(...array1)) // Gets highest number in array.
+console.log(Math.min(...array2)) // Gets lowest number in array.
+console.log(Math.max(...array1) + Math.min(...array2)) // Multiply highest number with lowest number.
+___________
+OEFENING 2.
+
+var floatSpeed = 10.4
+var lowSpeed = Math.ceil(floatSpeed)
+var highSpeed = Math.floor(floatSpeed)
+___________
+OEFENING 3.
+
+Math.floor((Math.random() * 100) + 50);
+Math.random()*10;
+Math.floor((Math.random() * 10) + 1);
+___________
+OEFENING 4.
+
+let textArray = ["Goro","Johhny Cago","Kano","Liu Kano","Raiden","Raptile","Scorpion","Shang Tsun","Sonya","Sub-Zero"]
+
+
+let randomIndex = Math.floor(Math.random() * textArray.length);
+ console.log(textArray[randomIndex]);
+
+-------------------------------------------------
+OEFENING 1.
+
+let characterName = "Bartje vleespet"
+let characterAge = 26
+let characterItems = ["health","strength","stamina",]
+console.log(characterItems[0]);
+console.log(characterItems[1]);
+console.log(characterItems[2]);
+
+let giveItem = Math.floor(Math.random()*characterItems.length);
+console.log(characterItems[giveItem]);
+___________
+OEFENING 2.
+
+
+
+function Weapon(title,physic,magic,minLevel,available){
+  this.title= title ;
+  this.physic= physic;
+  this.magic = magic;
+  this.minLevel= minLevel;
+  this.available= available;
+}
+let zwaard = new Weapon("sword of truth",80,120,8,true);
+let bijl = new Weapon("axe of Thor",120,80,12,false);
+let scepter = new Weapon("sands of time",60,180,22,true);
+
+let giveItem = function(){
+  console.log(zwaard.title,zwaard.physic,zwaard.magic,zwaard.minLevel,zwaard.available);
+  console.log(bijl.title,bijl.physic,bijl.magic,bijl.minLevel,bijl.available);
+  console.log(scepter.title,scepter.physic,scepter.magic,scepter.minLevel,scepter.available);
+}
+/*deel 1 oefening shop*/
+Weaponz = [zwaard,bijl,scepter];
+for (var i = 0; i < Weaponz.length; i++) {
+  if (Weaponz[i].available == true) {
+    console.log(Weaponz[i].title);
+  }
+}
+/*deel 2 oefening shop*/
+for (var i=0; i<Weaponz.length;i++){
+  if (Weaponz[i].minLevel>= 10) {
+    console.log(Weaponz[i].title)
+  }
+}
+
+___
+
+/*-previous try-*/
+/*giveItem();
+
+let giveItem = function(){
+  console.log(weaponz.available);
+}*/
+
+
+/*let zwaard = {
+  title = "sword of truth",
+  physic : 80,
+  magic : 120,
+  minLevel : 8,
+  available : true,
+}
+let bijl = {
+  title : "axe of Thor",
+  physic : 120,
+  magic : 80,
+  minLevel : 12,
+  available : true,
+}
+let scepter = {
+  title = "sands of time",
+  physic : 60,
+  magic : 180,
+  minLevel : 22,
+  available : true,
+}
+for(let key in bijl,scepter,zwaard){                  // loop
+        console.log( typeof key );          // displays the key type: String
+        console.log( key );                 // displays each key of my object ("color", "feets"..)
+        console.log( chair[key] );          // displays each value ("#FF0000", 4,...)
+    }*/
+_____________
+OEFENING 3.
+
+function Character(name, level, life, weapon){
+  this.name = name;
+  this.level = level;
+  this.life = life;
+  this.weapon = weapon;
+  this.attack = function(){
+  document.write(this.name+ " valt met het wapen " +this.weapon.name +" de schade is "+(weapon.damage*this.level)+" (level vermenigvuldigd met de schade van het wapen)");
+  }
+}
+function Weapon2(name, damage){
+  this.name = name;
+  this.damage = damage;
+}
+let scepter2 = new Weapon2("scepter", 99);
+let thijs = new Character("gianni", 100, 999,scepter2);
+gianni.attack();
+
+
